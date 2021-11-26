@@ -1,0 +1,120 @@
+.wrapperSignUp {
+  width: 100%;
+  height: calc(100vh - 55px);
+  background-color: #57606f;
+  position: relative;
+  top: 0px;
+  overflow: auto;
+}
+.mainSignUp {
+  width: 1200px;
+  height: 600px;
+  background-color: #60a3bc;
+  position: absolute;
+  border-radius: 20px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+}
+.item2 {
+  height: 400px;
+  padding-top: 70px;
+  color: maroon;
+  font-weight: bold;
+  font-size: 30px;
+}
+.item2 input {
+  width: 300px;
+  height: 40px;
+  border-radius: 20px;
+  border: 2px solid none;
+}
+.itemSubmit {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  height: 60px;
+  margin-top: -10px;
+  background-color: inherit;
+}
+.itemSubmit input {
+  width: 80%;
+  height: 40px;
+  border: 2px solid green;
+  border-radius: 20px;
+  background-color: inherit;
+  height: 60px;
+  position: relative;
+  left: 40px;
+  top: -10px;
+  color: maroon;
+  font-size: 30px;
+  font-weight: bold;
+}
+.imageBox {
+  width: 80%;
+  border: 2px solid green;
+  height: 250px;
+  margin-left: 50px;
+  border-radius: 20px;
+}
+.file {
+  display: inline-block;
+  width: 100%;
+  padding: 120px 0 0 0;
+  height: 100px;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* background: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698394-icon-130-cloud-upload-512.png') center center no-repeat #e4e4e4;*/
+  border-radius: 20px;
+  background-size: 100%;
+}
+ImageUploading{
+   display: inline-block;
+  width: 100%;
+  padding: 120px 0 0 0;
+  height: 100px;
+ /* overflow: hidden; */
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* background: url('https://cdn1.iconfinder.com/data/icons/hawcons/32/698394-icon-130-cloud-upload-512.png') center center no-repeat #e4e4e4;*/
+  border-radius: 20px;
+  background-size: 100%;
+  background-color: inherit;
+
+}
+.uploadText1{
+    width:500px;
+    height:500px;
+    background-color: yellow;
+    position: relative;
+   
+    bottom:300px;
+    right:600px;
+}
+/*
+@media (min-width: 411px) and (max-width: 900px) {
+  .mainSignUp{
+    width:700px;
+    grid-template-columns: repeat(1,1fr);
+  }
+    .wrapperSignUp {
+  width: 103%;
+  
+}
+  
+}*/
+.auto-grid {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+  grid-gap: 1rem;
+}

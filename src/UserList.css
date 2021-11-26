@@ -1,0 +1,49 @@
+.userList{
+    text-align: center;
+    
+    background-color: red;
+}
+table{
+    position:absolute;
+    left:500px;
+}
+ImageUploading{
+    color:red;
+}
+.uploadText{
+    width:500px;
+    height:500px;
+    background-color: yellow;
+    position: relative;
+   
+    bottom:300px;
+    right:600px;
+}
+
+/*responsive part*/
+
+@media (max-width: 700px) {
+  .container {
+    width: 400px;
+    grid-template-columns: repeat(1, 1fr);
+    padding-left: 0px;
+    background-color: #353b48;
+  }
+  .item {
+    width: 100%;
+  }
+  #cover {
+    overflow: auto;
+  }
+}
+@media (min-width: 701px) and (max-width: 1200px) {
+  .container {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 0px;
+    background-color: #353b48;
+  }
+  #cover {
+    overflow: auto;
+  }
+}

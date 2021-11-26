@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "font-awesome/css/font-awesome.min.css";
+import {Products} from './Products'
+import {PostData}  from './PostData'
+import {UploadImg}  from './UploadImg'
+import {PostDataLocalApi} from './PostDataLocalApi'
+import {UserSignup} from './UserSignup'
+import {ListUser} from './ListUser'
+import {UseRef} from './UseRef'
 
+import {QueryClient,QueryClientProvider}   from 'react-query'
+const client=new QueryClient();
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <QueryClientProvider client={client}>
+    < App />
+  </QueryClientProvider >
+ ,
   document.getElementById('root')
 );
 
@@ -15,3 +26,6 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+
+  

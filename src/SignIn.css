@@ -1,0 +1,69 @@
+.wrapperSignIn {
+  width: 100%;
+  height: calc(100vh - 55px);
+  background-color: #57606f;
+  position: relative;
+  top: 0px;
+  overflow: auto;
+}
+.MaincontentSignin {
+  background-color: #60a3bc;
+  width: 800px;
+  height: 300px;
+  position: absolute;
+  margin: auto;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 20px;
+  padding-top: 200px;
+}
+.MaincontentSignin input,
+button {
+  width: 300px;
+  height: 40px;
+  margin-left: 50px;
+  border-radius: 20px;
+}
+.MaincontentSignin input {
+  border: 2px solid #60a3bc;
+  color: red;
+}
+.userInput {
+  width: 80%;
+  height: 300px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  bottom: 0px;
+  right: 0px;
+  margin: auto;
+  text-align: center;
+  padding-top: 20px;
+  padding-right: 30px;
+}
+.itembtn {
+  grid-column-start: 0;
+  grid-column-end: 3;
+}
+
+.itembtn button {
+  border: 2px solid green;
+  background-color: inherit;
+  border-radius: 20px;
+}
+
+@media (min-width: 411px) and (max-width: 900px) {
+  .MaincontentSignin{
+   width:429px;
+bottom: 25px;
+padding-right: 20px;
+  }
+  .userInput{
+    width: 53%;
+right: 390px;
+  }
+}
